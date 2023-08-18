@@ -1,0 +1,358 @@
+body{
+    overflow-x: hidden;
+    padding-left: 200px;
+}
+.ju{
+    background-color: white;
+}
+.ya{
+    background-color: rgba(0,0,0,0.4);
+}
+header {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #87CEEB;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #ff8888));
+    background: -moz-linear-gradient(top, #fff 0%, #f88 100%);
+    background: -webkit-linear-gradient(top, #87CEEB 0%, #B2DCED 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ff8888 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #ff8888 100%);
+    background: linear-gradient(top, #ffffff 0%, #ff8888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ff8888', gradientType=0);
+}
+header div.wrap {
+  
+    width: auto;
+    height: 100%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+header div.wrap h1 {
+  
+    order: 2;
+    color: white;
+}
+header div.wrap h1 a {
+  
+}
+header div.wrap ul.gnb {
+    order: 3;
+    color: white;
+}
+header div.wrap ul.gnb li {
+    line-height: 1.4;
+}
+header div.wrap ul.gnb li a {
+  
+    color: #eee;
+    font-size: 13px;
+}
+header div.wrap ul.enb {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+}
+header div.wrap ul.enb li {
+  
+    height: 25px;
+    border-radius: 20px;
+}
+header div.wrap ul.enb li:nth-child(1){
+    
+    background-color: #F6EF4D;
+}
+header div.wrap ul.enb li:nth-child(2){
+    
+    background-color: #010E1D;
+}
+header div.wrap ul.enb li a {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+header div.wrap ul.enb li:nth-child(1) a{
+    
+    color: #010E1D;
+}
+header div.wrap ul.enb li:nth-child(2) a{
+    color: #EBEBF3;
+}
+header div.wrap ul.enb li a::after {
+    content: ""; 
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+}
+header div.wrap ul.enb li:nth-child(1) a::after {
+    
+    background-image: url(../img/day.svg);
+}
+header div.wrap ul.enb li:nth-child(2) a::after {
+    
+    background-image: url(../img/night.svg);
+}
+#title{
+    height: 800px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #8affec));
+	background: -moz-linear-gradient(top, #ffffff 0%, #8affec 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%, #8affec 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%, #8affec 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%, #8affec 100%);
+	background: linear-gradient(top,  #ffffff 0%, #8affec 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#8affec', gradientType=0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+}
+#title div.main-heading-wrapper{
+    position: relative;
+    margin-top: 76px;
+    margin-bottom: 76px;
+}
+#title div.main-heading-wrapper h2 {
+  position: relative;
+  z-index: 1;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 99px;
+  line-height: 87px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#title div.main-heading-wrapper h2.without-code {
+  color: white;
+}
+/* .header-1 { */
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  width: 386px;
+  padding-left: 56px;
+  background-image: url(http://uploads.webflow.com/5317d67d660658b254000454/534e23fb94be38d269000057_arrow-left-up.png);
+  background-position: 0% 15%;
+  background-size: 47px;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+  font-family: "kremlin-pro-web" !important;
+  color: white;
+  font-size: 29px;
+  line-height: 34px;
+  letter-spacing: 0.7px;
+}
+#title h2{
+    
+}
+#title p{
+    
+    font-size: 30px;
+}
+main {
+    height: 300%;
+    background-color: #91FFED;
+    transition: all 1s;
+}
+main section{
+    min-height: calc(100% / 3);
+    border: 2px solid;
+    box-sizing: border-box;
+}
+aside{
+    width: 200px;
+    position: absolute;
+    right: -200px;
+    top: 30px;
+    min-height: 300px;
+    background-color: skyblue;
+    transition: all 1s;
+}
+aside button{
+    all: unset;
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    left: -40px;
+    background-color: skyblue;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    background-image: url(../img/leftarrowwhite.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main section#basic {
+  
+}
+main section#basic div.wrap {
+  
+}
+main section#basic div.wrap article {
+  
+}
+main section#basic div.wrap article h2 {
+  
+}
+main section#basic div.wrap article > p {
+  
+}
+main section#basic div.wrap article ul.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    row-gap: 20px;
+}
+main section#basic div.wrap article ul.list li {
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: all 0.7s;
+    border: 1px solid transparent;
+}
+main section#basic div.wrap article ul.list li:nth-child(2n+1){
+    border-right: 1px solid #ccc;
+}
+main section#basic div.wrap article ul.list li a {
+  
+}
+main section#basic div.wrap article ul.list li a h3 {
+    background-color: aqua;
+    padding-left: 15px;
+    box-sizing: border-box;
+    line-height: 1.3;
+}
+main section#basic div.wrap article ul.list li a p {
+  
+}
+/--미들 섹션--/
+section#middle {
+
+}
+section#middle div.wrap {
+  
+}
+section#middle div.wrap article {
+  
+    row-gap: 20px;
+}
+section#middle div.wrap article h2 {
+  
+}
+section#middle div.wrap article p {
+  
+}
+section#middle div.wrap article ul.list {
+  
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+section#middle div.wrap article ul.list li {
+  
+    padding: 0 10px;
+    line-height: 1.5;
+    width: 450px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+section#middle div.wrap article ul.list li h3 {
+  
+    padding: 0 10px;
+    line-height: 1.5;
+    width: 450px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    position: relative;
+}
+section#middle div.wrap article ul.list li h3::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/down.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    display: block;
+}
+section#middle div.wrap article ul.list li p {
+  
+}
+section#middle div.wrap article ul.list li p br {
+  
+}
+/* 활용 */
+#use .slick{
+    
+    width: 100%;
+}
+#use .slick .slic{
+    
+}
+#use .slick .slic li{
+    height: 100px;
+}
+#use .slick .slic li.slic1{
+    background-color: black;
+}
+#use .slick .slic li.slic2{
+    background-color: white;
+}
+#use .slick .slic li.slic3{
+    background-color: wheat;
+}
+footer{
+    
+}
+footer a.top{
+    
+}
+.buttonreverse{
+    background-image: url(../img/rightarrowwhite.svg);
+}
+.asideshow{
+    right: 0;
+}
+.reverse{
+    background-image: url(../img/rightarrowwhite.svg);
+}
+.ju{
+    background-color: rgba(0,0,0,0.0);
+}
+.ya{
+    background-color: rgba(0,0,0,0.6);
+}
+.current a{
+    color: white !important;
+    background-color: black;
+}
+.borderblue{
+    border-color: blue;
+}
+.middlestyle{
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    background-color: white;
+}
+.h3style{
+    width: 100%;
+    border: 1px solid skyblue;
+    background-color: yellow;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+section#middle div.wrap article ul.list li.updownreverse h3::after{
+    background-image: url(../img/up.svg);
+}
