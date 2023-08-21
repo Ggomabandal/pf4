@@ -1,6 +1,11 @@
+html{
+    
+    font-size: 15px;
+}
 body{
     overflow-x: hidden;
     padding-left: 200px;
+    font-size: 15px;
 }
 .ju{
     background-color: white;
@@ -201,7 +206,7 @@ main section#basic div.wrap article {
   
 }
 main section#basic div.wrap article h2 {
-  
+    font-size: 3rem;
 }
 main section#basic div.wrap article > p {
   
@@ -230,6 +235,7 @@ main section#basic div.wrap article ul.list li a h3 {
     padding-left: 15px;
     box-sizing: border-box;
     line-height: 1.3;
+    font-size: 2.3rem;
 }
 main section#basic div.wrap article ul.list li a p {
   
